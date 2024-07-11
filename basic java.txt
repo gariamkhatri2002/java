@@ -1,0 +1,65 @@
+Q.five friends name 
+
+public class Main {
+    public static void main(String[] args){
+        System.out.print("chaman ");
+        System.out.print("Badhai ");
+        System.out.print("Yogesh ");
+        System.out.print("Ruchi ");
+        System.out.print("Bidisha");
+    }
+    
+}
+-------------------------------------------------------
+Q.five country name (new line )
+
+public class Main{
+    public static void main(String[] args){
+        System.out.println("India");
+        System.out.println("china");
+        System.out.println("Italy");
+        System.out.println("Japan");
+        System.out.println("Spain");
+    }
+}
+-----------------------------------------------------
+Q.five fav fruit  name 
+
+
+public class Main{
+       public static void main(String[] args){
+        System.out.print("Mango ");
+        System.out.print("Apple ");
+        System.out.print("Banana ");
+        System.out.print("Orange ");
+        System.out.print("Watermelon ");
+       }
+}
+---------------------------------------------------
+Q.five fav city name (new line )
+
+
+public class Main{
+    public static void main(String[] args){
+        System.out.println("Jaipur");
+        System.out.println("Kota");
+        System.out.println("Mumbai");
+        System.out.println("Pune");
+        System.out.println("Jodhpur");
+    }
+}
+--------------------------------------------------
+
+Q.five family  name 
+
+
+public class Main{
+    public static void main(String[] args){
+        System.out.print("SURESH ");
+        System.out.print("JAYA ");
+        System.out.print("SUNITA ");
+        System.out.print("GAURAV ");
+        System.out.print("GARIMA");
+    }
+}
+------------------------------------------------
