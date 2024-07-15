@@ -1,0 +1,386 @@
+reverse number 
+657
+756
+ 
+public class Input{
+    public static void main(String[] args){
+        int a=657;
+        int sum=0;
+        int rem=0;
+        while(a>0){
+            rem=a%10;
+            sum=sum*10+rem;
+            a=a/10;
+        }
+        System.out.print(sum);
+    }
+}
+-------------------------------------------------------------------------
+pallindrome number 
+12321 
+import java.util.Scanner;
+
+public class Input{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.print("Enter the value of a:");
+        int a=oc.nextInt();
+        int sum=0;
+        int rem=0;
+        int temp=a;
+        while(a>0){
+            rem=a%10;
+            sum=sum*10+rem;
+            a=a/10;
+        }
+        System.out.println(sum);
+        if(temp==sum){
+            System.out.print("this number is pallindrome");
+        }
+        else{
+            System.out.print("this number is not pallindrome");
+        }    
+    }
+}
+--------------------------------------------------------------------------
+armstrong number 
+153
+ 
+public class Input{
+    public static void main(String[] args){
+        int num=153;
+        int sum=0,rem=0;
+        int temp=num;
+        while(num>0){
+            rem=num%10;
+            sum=sum+rem*rem*rem;
+            num=num/10;
+        }
+        System.out.println(sum);
+        if(temp==sum){
+            System.out.print("this number is armstrong");
+        }
+        else{
+            System.out.print("this number is not armstrong");
+        }
+    }
+}
+------------------------------------------------------------------------
+neon number 
+9 ka square 
+81 => 8+1=(9)
+ 
+import java.util.Scanner;
+public class Input{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.print("Enter the value of a:");
+        int a=oc.nextInt();
+        int b=a*a;
+        int rem=0,sum=0;
+        
+        while(b>0){
+            rem=b%10;
+            sum=sum+rem;
+            b=b/10;
+        }
+        System.out.println(sum);
+        if(sum==a){
+            System.out.print("neon number");
+        }
+        else{
+            System.out.print("not neon number");
+        }
+
+    }
+}
+
+-----------------------------------------------------------------------
+prime number
+a)check number prime
+ 
+public class Input{
+    public static void main(String[] args){
+        int num=16;
+        int flag=0;
+        int a=2;
+        while(a<num){
+            if(num%2==0){
+                flag=1;
+            }
+
+            a++;
+
+        }
+        if(flag==0){
+            System.out.print("prime number");
+        }
+        else{
+            System.out.print("not prime number");
+        }
+
+    }
+}
+
+b)1--->100 prime number
+public class Input{
+    public static void main(String[] args){
+        for(int i=1;i<=100;i++){
+            int num=i;
+            int flag=0;
+            for(int j=2;j<num;j++){
+                if(num%j==0){
+                    flag=1;
+                }
+            }
+            if(flag==0){
+                System.out.print(i+" ");
+            }
+        }
+        
+    }
+}
+ 
+-----------------------------------------------------------------------
+factorial 
+5 
+1*2*3*4*5
+
+public class Input{
+    public static void main(String[] args){
+        int a=1;
+        int b=5;
+        int fact=1;
+        while(a<=b){
+            fact=fact*a;
+            a++;
+        }
+        System.out.print(fact);
+    }
+}
+----------------------------------------------------------------------
+fibonacci series 
+0 1 1 2 3 5
+ 
+public class Input{
+    public static void main(String[] args){
+        int a=0,b=1,c;
+        System.out.print(a+" "+b);
+        int d=1;
+
+        while(d<=5){
+            c=a+b;
+            System.out.print(" "+c);
+            a=b;
+            b=c;
+            d++;
+        }
+    }
+}
+---------------------------------------------------------------------
+use input :6743 =>4 digit
+
+import java.util.Scanner;
+public class Input{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        int a=oc.nextInt();
+        int count=0;
+        while(a>0){
+            count++;
+            a=a/10;
+        }
+        System.out.print(count);
+    }
+} 
+---------------------------------------------------------------------
+user : 342 => 354
+ 
+import java.util.Scanner;
+public class Input{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.print("Enter the value of a:");
+        int a=oc.nextInt();
+        int sum=0,rem=0;
+        while(a>0){
+            rem=a%10;
+            rem=rem+1;
+            sum=sum*10+rem;
+            a=a/10;
+        }
+        System.out.print(sum);
+    }
+}
+---------------------------------------------------------------------
+user: 342 =>453
+ 
+import java.util.Scanner;
+public class Input{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.print("Enter the value of a:");
+        int a=oc.nextInt();
+        int rem=0,sum=0;
+        while(a>0){
+            rem=a%10;
+            rem=rem+1;
+            sum=sum*10+rem;
+            a=a/10;
+        }
+        System.out.println("reverse="+sum);
+        int rem1=0,sum1=0;
+        while(sum>0){
+            rem1=sum%10;
+            sum1=sum1*10+rem1;
+            sum=sum/10;
+        }
+        System.out.println("again reverse="+sum1);
+
+    }
+}
+
+---------------------------------------------------------------------
+
+even number 
+type1 : 1-->100 
+type2 : 1--->100 even number ka sum 
+type3 : random value 34--->89 =>even number 
+type4 : randome value k sabi ka sum aa jaye 
+
+odd number 
+type1: 1-->100 odd numbers 
+type2: 1--100 odd number ka sum 
+type3 : random value 34--->89 =>odd number 
+type4 : randome value k sabi ka sum aa jaye
+ 
+import java.util.Scanner;
+public class Input{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.print("Enter the even or odd:");
+        String name=oc.next();
+        if(name.equals("even")){
+            System.out.print("Enter the type:");
+            String type=oc.next();
+            if(type.equals("type1")){
+                for(int i=1;i<=100;i++){
+                    if(i%2==0){
+                        System.out.print(i+" ");
+                    }
+                }
+            }
+            else if(type.equals("type2")){
+                int sum=0;
+                for(int i=1;i<=100;i++){
+                    if(i%2==0){
+                        sum=sum+i;
+                    }
+                }
+                System.out.print(sum);
+            }
+            else if(type.equals("type3")){
+                System.out.print("Enter the starting point:");
+                int start=oc.nextInt();
+                System.out.print("Enter the ending point:");
+                int end=oc.nextInt();
+                for(int i=start;i<=end;i++){
+                    if(i%2==0){
+                        System.out.print(i);
+                    }
+                }
+            }
+            else if(type.equals("type4")){
+                System.out.print("Enter the starting point:");
+                int start=oc.nextInt();
+                System.out.print("Enter the ending point:");
+                int end=oc.nextInt();
+                int sum=0;
+                for(int i=start;i<=end;i++){
+                    if(i%2==0){
+                        sum=sum+i;
+                    }
+                }
+                System.out.println(sum);
+            } 
+        }
+        if(name.equals("odd")){
+            System.out.print("Enter the type:");
+            String type=oc.next();
+            if(type.equals("type1")){
+                for(int i=1;i<=100;i++){
+                    if(i%2==1){
+                        System.out.print(i+" ");
+                    }
+                }
+            }
+            else if(type.equals("type2")){
+                int sum=0;
+                for(int i=1;i<=100;i++){
+                    if(i%2==1){
+                        sum=sum+i;
+                    }
+                }
+                System.out.print(sum);
+            }
+            else if(type.equals("type3")){
+                System.out.print("Enter the starting point:");
+                int start=oc.nextInt();
+                System.out.print("Enter the ending point:");
+                int end=oc.nextInt();
+                for(int i=start;i<=end;i++){
+                    if(i%2==1){
+                        System.out.print(i);
+                    }
+                }
+            }
+            else if(type.equals("type4")){
+                System.out.print("Enter the starting point:");
+                int start=oc.nextInt();
+                System.out.print("Enter the ending point:");
+                int end=oc.nextInt();
+                int sum=0;
+                for(int i=start;i<=end;i++){
+                    if(i%2==1){
+                        sum=sum+i;
+                    }
+                }
+                System.out.println(sum);
+            } 
+        }
+        
+    }
+}
+
+----------------------------------------------------------------------------------------------
+perfect number : 
+6 
+1 2 3 
+1 + 2 + 3 => 6 
+
+8 
+2 2 2 =>6 not perfect number
+import java.util.Scanner;
+
+public class Input{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.print("enter the value of a:");
+        int a=oc.nextInt();
+        int sum=0;
+        for(int i=1;i<a;i++){
+            if(a%i==0){
+               sum=sum+i;
+            }
+        }
+        System.out.println(sum);
+        if(sum==a){
+            System.out.print("perfect number");
+        }
+        else{
+            System.out.print("not perfect number");
+        }
+    }
+} 
+
+--------------------------------------------------------------------------------------------
