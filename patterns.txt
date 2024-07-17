@@ -1,0 +1,1702 @@
+patterns: 
+1) 
+****
+****
+****
+**** 
+while:-
+
+public class Input{
+    public static void main(String[] args){
+        int i=1;
+        while(i<=4){
+            int j=1;
+            while(j<=4){
+                System.out.print("*");
+                j++;
+            }
+            i++;
+            System.out.println();
+            
+        }
+    }
+} 
+
+for loop:-
+
+public class Input{
+    public static void main(String[] args){
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=4;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+----------------------------------------------------------------------------------
+2)
+*
+**
+*** 
+while:-
+ 
+public class Input{
+    public static void main(String[] args){
+        int i=1;
+        while(i<=3){
+            int j=1;
+            while(j<=i){
+                System.out.print("*");
+                j++;
+            }
+            System.out.println();
+            i++;
+        }
+    }
+}
+
+for loop :-
+
+public class Input{
+    public static void main(String[] args){
+        for(int i=1;i<=3;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+---------------------------------------------------------------------------------
+3)
+***
+**
+*
+while:-
+public class Input{
+    public static void main(String[] args){
+        int i=3;
+        while(i>0){
+            int j=1;
+            while(j<=i){
+                System.out.print("*");
+                j++;
+            }
+            System.out.println();
+            i--;
+        }
+    }
+}
+
+for loop:-
+public class Input{
+    public static void main(String[] args){
+        for(int i=3;i>=1;i--){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+    }
+}
+---------------------------------------------------------------------------------------------- 
+4)
+*
+**
+***
+***
+**
+*
+while :-
+public class Input{
+    public static void main(String[] args){
+        int i=1;
+        while(i<=3){
+            int j=1;
+            while(j<=i){
+                System.out.print("*");
+                j++;
+            }
+            System.out.println();
+            i++;
+        }
+        int g=3;
+        while(g>=1){
+            int k=1;
+            while(k<=g){
+                System.out.print("*");
+                k++;
+            }
+            System.out.println();
+            g--;
+        }
+        
+    }
+}
+
+for loop:-
+public class Input{
+    public static void main(String[] args){
+        for(int i=1;i<=3;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i=3;i>=1;i--){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+    }
+} 
+----------------------------------------------------------------------------------
+5)
+*
+**
+***
+**
+*
+while:-
+public class Input{
+    public static void main(String[] args){
+        int i=1;
+        while(i<=3){
+            int j=1;
+            while(j<=i){
+                System.out.print("*");
+                j++;
+            }
+            System.out.println();
+            i++;
+        }
+        int g=2;
+        while(g>=1){
+            int j=1;
+            while(j<=g){
+                System.out.print("*");
+                j++;
+            }
+            System.out.println();
+            g--;
+        }
+    }
+}
+
+for loop:-
+public class Input{
+    public static void main(String[] args){
+        for(int i=1;i<=3;i++){
+           for(int j=1;j<=i;j++){
+            System.out.print("*");
+           }
+           System.out.println();
+        }
+        for(int i=2;i>=1;i--){
+           for(int j=1;j<=i;j++){
+            System.out.print("*");
+           }
+           System.out.println();
+        }
+    }
+}
+---------------------------------------------------------------------------------
+6) 
+12345
+12345
+12345
+12345 
+12345
+
+while:-
+public class Input{
+    public static void main(String[] args){
+        int i=1;
+        while(i<=5){
+            int j=1;
+            while(j<=5){
+                System.out.print(j);
+                j++;
+            }
+            System.out.println();
+            i++;
+        }
+    }
+}
+
+for loop:- 
+public class Input{
+    public static void main(String[] args){
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=5;j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+        
+    }
+}
+------------------------------------------------------------------
+7)
+1111
+2222
+3333
+4444 
+while:-
+public class Input{
+    public static void main(String[] args){
+        int i=1;
+        while(i<=4){
+            int j=1;
+            while(j<=4){
+                System.out.print(i);
+                j++;
+            }
+            System.out.println();
+            i++;
+        }
+    }
+}
+
+for loop:-
+public class Input{
+    public static void main(String[] args){
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=5;j++){
+                System.out.print(i);
+            }
+            System.out.println();
+        }
+        
+    }
+}
+--------------------------------------------------------------------------
+8) 
+1
+12
+123
+1234
+while:-
+
+for loop:- 
+public class Input{
+    public static void main(String[] args){
+       for(int i=1;i<=4;i++){
+           for(int j=1;j<=i;j++){
+            System.out.print(j);
+           }
+           System.out.println();
+       }
+    }
+}
+----------------------------------------------------------------------------
+9)
+1
+22
+333
+4444
+ 
+public class Input{
+    public static void main(String[] args){
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(i);
+            }
+            System.out.println();
+        }
+    }
+}
+--------------------------------------------------------------------------
+10) 
+54321
+54321
+54321
+54321
+54321
+ 
+public class Input{
+    public static void main(String[] args){
+        for(int i=1;i<=5;i++){
+            for(int j=5;j>=1;j--){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+}
+------------------------------------------------------------------------
+11)
+55555
+44444
+33333
+22222
+11111
+ 
+public class Input{
+    public static void main(String[] args){
+        for(int i=5;i>=1;i--){
+            for(int j=5;j>=1;j--){
+                System.out.print(i);
+            }
+            System.out.println();
+        }
+    }
+}
+-----------------------------------------------------------------------
+12) 
+  * 
+ **
+***
+public class Input{
+    public static void main(String[] args){
+        for(int i=1;i<=3;i++){
+            for(int s=2;s>=i;s--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+---------------------------------------------------------------------
+13) 
+*** 
+ ** 
+  * 
+public class Input{
+    public static void main(String[] args){
+        for(int i=3;i>=1;i--){
+            for(int s=2;s>=i;s--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+--------------------------------------------------------------------
+14)
+  *
+ **
+***
+***
+ **
+  * 
+public class Input{
+    public static void main(String[] args){
+        for(int i=1;i<=3;i++){
+            for(int s=2;s>=i;s--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.err.println();
+        }
+        for(int i=3;i>=1;i--){
+            for(int s=2;s>=i;s--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+    }
+}
+---------------------------------------------------------------------------
+15)
+  *
+ **
+***
+ **
+  *
+public class Input{
+    public static void main(String[] args){
+        for(int i=1;i<=3;i++){
+            for(int s=2;s>=i;s--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.err.println();
+        }
+        for(int i=2;i>=1;i--){
+            for(int s=2;s>=i;s--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+    }
+}
+-----------------------------------------------------------------------------------
+16) 
+    *   
+   * *
+  * * * 
+ * * * *
+* * * * * 
+
+public class Input{
+    public static void main(String[] args){
+        for(int i=1;i<=5;i++){
+            for(int s=4;s>=i;s--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.err.println();
+        }
+        
+        
+    }
+}
+--------------------------------------------------------------------------------------------------
+17) 
+###*
+##**
+#***
+****
+public class Input{
+    public static void main(String[] args){
+        for(int i=1;i<=4;i++){
+            for(int s=3;s>=i;s--){
+                System.out.print("#");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+        
+    }
+}
+----------------------------------------------------------
+18) 
+****
+#***
+##**
+###* 
+
+public class Input{
+    public static void main(String[] args){
+        for(int i=4;i>=1;i--){
+            for(int s=3;s>=i;s--){
+                System.out.print("#");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+    }
+}
+---------------------------------------------------------------------------------
+19) 
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 14 15 16
+ 
+public class Input{
+    public static void main(String[] args){
+        int a=1;
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=4;j++){
+                System.out.print(a+" ");
+                a++;
+            }
+            System.out.println();
+        }
+        
+    }
+}
+-------------------------------------------------------------------------------
+20) 
+2 4 6 8 10 
+12 14 16 18 20 
+22 24 26 28 30 
+32 34 36 38 40 
+42 44 46 48 50 
+
+public class Input{
+    public static void main(String[] args){
+        int a=2;
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=5;j++){
+                System.out.print(a+" ");
+                a+=2;
+            }
+            System.out.println();
+        }
+        
+    }
+}
+-------------------------------------------------------------------------------
+21)
+1 2 3 4 5
+2 4 6 8 10 
+3 6 9 12 15
+4 8 12 16 20 
+5 10 15 20  25
+ 
+public class Input{
+    public static void main(String[] args){
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=5;j++){
+                System.out.print(i*j+" ");
+            }
+            System.out.println();
+        }
+        
+    }
+}
+------------------------------------------------------------------------
+22)(if else in for loop)
+01010
+10101
+01010
+10101
+
+public class Input{
+    public static void main(String[] args){
+        int a=1;
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=5;j++){
+                if(a%2==1){
+                    System.out.print("0");
+                }
+                else{
+                    System.out.print("1");
+                }
+                a++;
+            }
+            System.out.println();
+        }
+        
+    }
+}
+--------------------------------------------------------------
+23)
+1 0 1 0 1
+0 1 0 1 0 
+1 0 1 0 1
+0 1 0 1 0
+
+public class Input{
+    public static void main(String[] args){
+        int a=1;
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=5;j++){
+                if(a%2==1){
+                    System.out.print("1 ");
+                }
+                else{
+                    System.out.print("0 ");
+                }
+                a++;
+            }
+            System.out.println();
+        }
+        
+    }
+}
+24)
+0 0 0 0 
+1 1 1 1 
+0 0 0 0 
+1 1 1 1 
+
+public class first {
+     public static void main(String[] args) {
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=4;j++){
+                if(i%2==1){
+                    System.out.print("0 ");
+                }
+                else{
+                    System.out.print("1 ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+25)
+1 1 1 1 
+0 0 0 0 
+1 1 1 1 
+0 0 0 0 
+
+public class first {
+     public static void main(String[] args) {
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=4;j++){
+                if(i%2==1){
+                    System.out.print("1 ");
+                }
+                else{
+                    System.out.print("0 ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+-----------------------------------------------------------------   
+1)
+* * * *
+ * * * 
+  * * 
+   * 
+
+public class First {
+     public static void main(String[] args) {
+        for(int i=4;i>=1;i--){
+            for(int s=3;s>=i;s--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+    }
+}
+--------------------------------------------------------------
+2)
+   *
+  * *
+ * * *
+* * * * 
+* * * *
+ * * * 
+  * * 
+   * 
+
+public class First {
+     public static void main(String[] args) {
+        for(int i=1;i<=4;i++){
+            for(int s=3;s>=i;s--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+        for(int i=4;i>=1;i--){
+            for(int s=3;s>=i;s--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+    }
+}
+---------------------------------------------------------------------
+
+9) 
+*
+* * 
+*   *
+* * * *
+
+public class First {
+     public static void main(String[] args) {
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=4;j++){
+                if(i==4 ||j==1 ||i==j){
+                    System.out.print(" *");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+        
+    }
+}
+-----------------------------------------------------------------------------
+10) 
+1****
+22***
+333**
+4444*
+55555
+
+public class First {
+     public static void main(String[] args) {
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=5;j++){
+                if(j<=i){
+                    System.out.print(i);
+                }
+                else{
+                    System.out.print("*");
+                }
+                
+            }
+            System.out.println();
+        }
+        
+    }
+}
+------------------------------------------------------------------------
+11)
+1****
+12***
+123**
+1234*
+12345
+
+public class First {
+     public static void main(String[] args) {
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=5;j++){
+                if(j<=i){
+                    System.out.print(j);
+                }
+                else{
+                    System.out.print("*");
+                }
+                
+            }
+            System.out.println();
+        }
+        
+    }
+}
+----------------------------------------------------------------------------
+12) 
+*
+ *
+  *
+   *
+
+public class First {
+     public static void main(String[] args) {
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=4;j++){
+                if(i==j){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+                
+            }
+            System.out.println();
+        }
+        
+    }
+}
+--------------------------------------------------------------------------------------
+13) 
+* * * *
+*      *
+*      *
+* * * *
+public class Input{
+    public static void main(String[] args){
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=4;j++){
+                if(i==1 ||i==4 ||j==1 ){
+                    System.out.print(" *");
+                    
+                }
+                else if(i==2 && j==4 ||i==3 && j==4){
+                    System.out.print("    *");
+                 }
+                 
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        
+    }
+}
+----------------------------------------------------------------------------------
+14)
+* * * *  *
+*  *      *
+*     *   *
+*       * *
+* * * *  *
+public class Input{
+    public static void main(String[] args){
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=4;j++){
+                if(i==1 ||i==4 ||j==1 ){
+                    System.out.print(" *");
+                    
+                }
+                else if(i==2 && j==4 ||i==3 && j==4){
+                    System.out.print("  *");
+                 }
+                else if(i==j){
+                    System.out.print("  *");
+                } 
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        
+    }
+}
+
+-----------------------------------------------------------------------------
+15) 
+1 
+4 9 
+16 25 36 
+
+public class First {
+     public static void main(String[] args) {
+        int num=1;
+        int ans;
+        for(int i=1;i<=3;i++){
+            for(int j=1;j<=i;j++){
+                ans=num*num;
+                System.out.print(ans+" ");
+                num++;
+            }
+            System.out.println();
+        }
+        
+    }
+}
+---------------------------------------------------------------------------------
+16) 
+1 
+4 4 
+9 9 9 
+16 16 16 16 
+
+public class First {
+     public static void main(String[] args) {
+        int num=1;
+        int ans;
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=i;j++){
+                ans=num*num;
+                System.out.print(ans+" ");
+                
+            }
+            num++;
+            System.out.println();
+        }
+        
+    }
+}
+-----------------------------------------------------------------------------------
+17) 
+1 
+8 27 
+64 125 216 
+
+public class Input{
+    public static void main(String[] args){
+        int num=1;
+        int ans=0;
+        for(int i=1;i<=3;i++){
+            for(int j=1;j<=i;j++){
+                ans=num*num*num;
+                System.out.print(ans+" ");
+                num++;
+            }
+            System.out.println();
+        }
+    }
+}
+-----------------------------------------------------------------------------------------------
+18) 
+* * * * 
+* 
+*
+*
+import java.util.Scanner;
+public class Input{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.print("Enter the nth term:");
+        int nth=oc.nextInt();
+        for(int i=1;i<=nth;i++){
+            for(int j=1;j<=nth;j++){
+                if(i==1 ||j==1){
+                    System.out.print(" *");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+-----------------------------------------------------------------------
+19)
+* * * * * 
+       *  *
+   *      * 
+ *        *
+*         *
+         
+20) 
+    *
+   *
+  *
+*
+import java.util.Scanner;
+public class Input{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                if(i+j==n+1){
+                    if(i==4 && j==1){
+                        System.out.print("*");
+                        continue;
+                    }
+                    System.out.print(" *");
+                }
+                
+                else{
+                    System.out.print(" ");
+                }
+                
+            }
+            System.out.println();
+        }
+        
+    }
+}
+
+-----------------
+-----------------------------------------------------------------------------
+pattern : 
+1)
+1 3 5 7 9 
+3 5 7 9 11 
+5 7 9 11 13 
+7 9 11 13 15  
+9 11 13 15 17 
+
+public class Input{
+    public static void main(String[] args){
+        
+        for(int i=1;i<=10;i+=2){
+            int num=i;
+            for(int j=1;j<=5;j++){
+                System.out.print(num+2+" ");
+                num+=2;
+            }
+            System.out.println();
+        }
+    }
+}
+-----------------------------------------------------------------------------
+2) 
+1 0 1 0 1 
+0 0 0 0 0 
+1 0 1 0 1 
+0 0 0 0 0 
+1 0 1 0 1 
+
+public class Input{
+    public static void main(String[] args){
+        
+        for(int i=1;i<=5;i++){
+           for(int j=1;j<=5;j++){
+               if((i*j)%2==0){
+                System.out.print("0 ");
+               }
+               else{
+                System.out.print("1 ");
+               }
+            }
+            System.out.println();
+        }
+    }
+}
+---------------------------------------------------------------------------------
+3) 
+0 1 0 1 0 
+0 0 0 0 0 
+0 1 0 1 0 
+0 0 0 0 0 
+0 1 0 1 0 
+public class Input{
+    public static void main(String[] args){
+        
+        for(int i=1;i<=5;i++){
+           for(int j=1;j<=5;j++){
+            if(i%2==0 || j%2==1){
+               System.out.print("0 ");
+            }
+            else{
+                System.out.print("1 ");
+            }
+              
+            }
+            System.out.println();
+        }
+    }
+}
+-------------------------------------------------------------------------
+4)
+0 1 0 1 0
+0 1 0 1 0
+0 1 0 1 0
+0 1 0 1 0
+0 1 0 1 0 
+
+public class Input{
+    public static void main(String[] args){
+        
+        for(int i=1;i<=10;i+=2){
+           for(int j=1;j<=5;j++){
+            if((i*j)%2==0){
+               System.out.print("1 ");
+            }
+            else{
+                System.out.print("0 ");
+            }
+              
+            }
+            System.out.println();
+        }
+    }
+}
+---------------------------------------------------------------------------------
+5)
+1 0 1 0 1 
+1 0 1 0 1 
+1 0 1 0 1 
+1 0 1 0 1 
+1 0 1 0 1 
+
+public class Input{
+    public static void main(String[] args){
+        
+        for(int i=1;i<=10;i+=2){
+           for(int j=1;j<=5;j++){
+            if((i*j)%2==0){
+               System.out.print("0 ");
+            }
+            else{
+                System.out.print("1 ");
+            }
+              
+            }
+            System.out.println();
+        }
+    }
+}
+--------------------------------------------------------------------------------
+6)
+1 
+2 4 
+3 6 9 
+4 8 12 16 
+5 10 15 20 25 
+
+public class Input{
+    public static void main(String[] args){
+        
+        for(int i=1;i<=5;i++){
+           for(int j=1;j<=i;j++){
+            System.out.print(i*j+" ");
+              
+            }
+            System.out.println();
+        }
+    }
+}
+------------------------------------------------------------------------------------
+7)
+1 
+0 0 
+1 1 1 
+0 0 0 0 
+1 1 1 1 1 
+
+public class Input{
+    public static void main(String[] args){
+        
+        for(int i=1;i<=5;i++){
+           for(int j=1;j<=i;j++){
+            if(i%2==0){
+                System.out.print("0 ");
+            }
+            else{
+                System.out.print("1 ");
+            }
+              
+            }
+            System.out.println();
+        }
+    }
+}
+----------------------------------------------------------------------------------------
+8)
+1
+1 0 
+1 0 1 
+1 0 1 0 
+1 0 1 0 1
+ 
+public class Input{
+    public static void main(String[] args){
+        
+        for(int i=1;i<=5;i++){
+           for(int j=1;j<=i;j++){
+            if(j%2==0){
+                System.out.print("0 ");
+            }
+            else{
+                System.out.print("1 ");
+            }
+            }
+            System.out.println();
+        }
+    }
+}
+ ------------------------------------------------------
+      *
+    * * *
+  * * * * *
+* * * * * * *
+
+
+
+
+public class Input{
+    public static void main(String[] args){
+       int n=4;
+       for(int i=1;i<=n;i++){
+        for(int s=1;s<=n-i;s++){
+            System.out.print("  ");
+        }
+        for(int j=1;j<i*2;j++){
+            System.out.print(" *");
+        }
+        System.out.println();
+        
+        }
+        
+        
+    }
+}
+
+
+
+-----------------------------------------------------------------
+* * * * * * *
+ * * * * *
+   * * *
+     *
+
+
+public class Input{
+    public static void main(String[] args){
+       int n=8;
+        for(int i=n;i>=1;i--){
+            for(int s=1;s<=n-i;s++){
+                System.out.print("  ");
+            }
+            for(int j=1;j<i*2;j++){
+                System.out.print(" *");
+            }
+            System.out.println();
+            
+        }
+       
+        
+    }
+}
+
+ 
+----------------------------------------------------------
+      *
+    * * *
+  * * * * *
+* * * * * * *
+* * * * * * *
+  * * * * *
+    * * *
+      * 
+
+
+public class Input{
+    public static void main(String[] args){
+       int n=4;
+       for(int i=1;i<=n;i++){
+        for(int s=1;s<=n-i;s++){
+            System.out.print("  ");
+        }
+        for(int j=1;j<i*2;j++){
+            System.out.print(" *");
+        }
+        System.out.println();
+        
+        }
+        for(int i=n;i>=1;i--){
+            for(int s=1;s<=n-i;s++){
+                System.out.print("  ");
+            }
+            for(int j=1;j<i*2;j++){
+                System.out.print(" *");
+            }
+            System.out.println();
+            
+        }
+       
+        
+    }
+}
+
+
+---------------------------------------------------------
+a
+bb
+ccc
+dddd
+eeeee
+
+public class Input{
+    public static void main(String[] args){
+        
+        for(char i='a';i<='e';i++){
+           for(char j='a';j<=i;j++){
+            System.out.print(i);
+            }
+            System.out.println();
+        }
+    }
+}
+---------------------------------------------------------------------------
+a 
+ab
+abc
+abcd
+abcde
+
+public class Input{
+    public static void main(String[] args){
+        for(char i='a';i<='e';i++){
+           for(char j='a';j<=i;j++){
+            System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+}
+--------------------------------------------------------------------
+A
+BB
+CCC
+DDDD
+EEEEE
+
+public class Input{
+    public static void main(String[] args){
+        for(char i='A';i<='E';i++){
+           for(char j='A';j<=i;j++){
+            System.out.print(i);
+            }
+            System.out.println();
+        }
+    }
+}
+--------------------------------------------------------------------
+A
+AB
+ABC
+ABCD
+ABCDE
+
+public class Input{
+    public static void main(String[] args){
+        for(char i='A';i<='E';i++){
+           for(char j='A';j<=i;j++){
+            System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+}
+--------------------------------------------------------------------
+
+a ****
+ab***
+abc**
+abcd*
+abcde
+
+public class Input{
+    public static void main(String[] args){
+        for(char i='a';i<='e';i++){
+           for(char j='a';j<='e';j++){
+            if(j<=i){
+                System.out.print(j);
+            }
+            else{
+                System.out.print("*");
+            }
+            
+            }
+            System.out.println();
+        }
+    }
+}
+----------------------------------------------------------------------------
+A****
+BB***
+CCC**
+DDDD*
+EEEEE
+
+public class Input{
+    public static void main(String[] args){
+        for(char i='A';i<='E';i++){
+           for(char j='A';j<='E';j++){
+            if(j<=i){
+                System.out.print(i);
+            }
+            else{
+                System.out.print("*");
+            }
+            
+            }
+            System.out.println();
+        }
+    }
+}
+-----------------------------------------------------------------------------
+A****
+AB***
+ABC**
+ABCD*
+ABCDE
+
+public class Input{
+    public static void main(String[] args){
+        for(char i='A';i<='E';i++){
+           for(char j='A';j<='E';j++){
+            if(j<=i){
+                System.out.print(j);
+            }
+            else{
+                System.out.print("*");
+            }
+            
+            }
+            System.out.println();
+        }
+    }
+}
+----------------------------------------------------------------------
+abcde
+abcd*
+abc**
+ab***
+a****
+
+public class Input{
+    public static void main(String[] args){
+        for(char i='e';i>='a';i--){
+            for(char j='a';j<='e';j++){
+                if(j<=i){
+                    System.out.print(j);
+                }
+                else{
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+        
+    }
+}
+--------------------------------------------------------------
+ABCDE
+ABCD*
+ABC**
+AB***
+A****
+
+public class Input{
+    public static void main(String[] args){
+        for(char i='E';i>='A';i--){
+            for(char j='A';j<='E';j++){
+                if(j<=i){
+                    System.out.print(j);
+                }
+                else{
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+        
+    }
+}
+---------------------------------------------------------------
+eeeee
+ dddd
+   ccc
+    bb
+      a
+
+
+public class Input{
+    public static void main(String[] args){
+       for(char i='e';i>='a';i--){
+        for(char s='d';s>=i;s--){
+            System.out.print(" ");
+            
+        }
+        if(i<='c'){
+            System.out.print(" ");
+        }
+        
+        for(char j='a';j<=i;j++){
+            if(i=='a'){
+                System.out.print(" ");
+            }
+            System.out.print(i);
+        }
+        System.out.println();
+       }
+    }
+}
+--------------------------------------------------------------
+e e e e e
+* d d d d 
+* * c c c 
+* * *   b b 
+* * *  *  a
+
+public class Input{
+    public static void main(String[] args){
+       for(char i='e';i>='a';i--){
+        for(char s='d';s>=i;s--){
+            System.out.print("* ");
+            
+        }
+        if(i<='b'){
+            System.out.print("  ");
+        }
+        
+        for(char j='a';j<=i;j++){
+            
+            
+            System.out.print(i+" ");
+        }
+        System.out.println();
+       }
+    }
+}
+
+--------------------------------------------------------------
+EEEEE
+ DDDD
+   CCC
+      BB
+        A
+
+public class Input{
+    public static void main(String[] args){
+       for(char i='E';i>='A';i--){
+        for(char s='D';s>=i;s--){
+            System.out.print(" ");
+            
+        }
+        if(i<='C'){
+            System.out.print(" ");
+        }
+        
+        for(char j='A';j<=i;j++){
+            if(i=='A'){
+                System.out.print(" ");
+            }
+            System.out.print(i);
+        }
+        System.out.println();
+       }
+    }
+}
+
+----------------------------------------------------------------------------------
+E E E E E
+* D D D D
+* * C C C
+* * *   B B
+* * *  *   A
+
+public class Input{
+    public static void main(String[] args){
+       for(char i='E';i>='A';i--){
+        for(char s='D';s>=i;s--){
+            System.out.print("* ");
+            
+        }
+        if(i<='B'){
+            System.out.print("  ");
+        }
+        
+        for(char j='A';j<=i;j++){
+            if(i=='A'){
+                System.out.print(" ");
+            }
+            
+            System.out.print(i+" ");
+        }
+        System.out.println();
+       }
+    }
+}
+
+----------------------------
+1 2 3 4 *
+1 2 3 * 5 
+1 2 * 4 5 
+1 * 3 4 5 
+* 2 3 4 5
+
+public class Input{
+    public static void main(String[] args){
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                if(i+j==n+1){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print(j+" ");
+                }
+            }
+            System.out.println();
+        }
+        
+    }
+} 
+-----------------------------------------------------------------------------
+* 1 * 2 * 
+3 * 4 * 5
+* 6 * 7 *
+8 * 9 * 10 
+* 11 * 12 *
+ 
+public class Input{
+    public static void main(String[] args){
+        int num=1;
+       for(int i=1;i<=5;i++){
+        for(int j=1;j<=5;j++){
+            if(i%2==1 && j%2==1 ||i%2==0 && j%2==0){
+                System.out.print("* ");
+            }
+            else{
+                System.out.print(num+" ");
+                num++;
+            }
+        }
+        System.out.println();
+       }
+        
+    }
+}
+
+
+----------------------------------------------------------------------------
+1 3 5 7 9 
+11 13 15 17 19 
+21 23 25 27 29 
+31 33 35 37 39 
+41 43 45 47 49 
+
+public class Input{
+    public static void main(String[] args){
+        int num=1;
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=5;j++){
+                System.out.print(num+" ");
+                num+=2;
+            }
+            System.out.println();
+        }
+        
+    }
+}
+
+-----------------------------------------------------------------------------
+1 6 11 16 21
+2 7 12 17 22
+3 8 13 18 23
+4 9 14 19 24
+5 10 15 20 25
+
+public class Input{
+    public static void main(String[] args){
+        
+        for(int i=1;i<=5;i++){
+            int num=i;
+            for(int j=1;j<=5;j++){
+                System.out.print(num+" ");
+                num+=5;
+            }
+            System.out.println();
+        }
+        
+    }
+}
+
+------------------------------------------------------------------
+    1
+   12
+  123
+ 1234
+12345
+
+public class Input{
+    public static void main(String[] args){
+        
+        for(int i=1;i<=5;i++){
+            for(int s=4;s>=i;s--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print(j);
+            
+            }
+            System.out.println();
+        }
+        
+    }
+}
+
+ 
