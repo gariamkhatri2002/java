@@ -1,0 +1,384 @@
+1)
+user input :
+Declare and Initialize Variables:
+Declare an integer variable named age and initialize it with the value 25.
+Declare a double variable named price and initialize it with the value 19.99.
+public class Input{
+    public static void main(String[] args){
+        int age=25;
+        System.out.println(age);
+        double price=19.99;
+        System.out.println(price);
+    }
+}
+-------------------------------------------------------------------
+2)
+user input :
+Performing Operations:
+Create two variables, num1 and num2, with values 10 and 5 respectively. Perform addition, subtraction, multiplication, and division operations on them.
+
+public class Input{
+    public static void main(String[] args){
+        int num1=10;
+        int num2=5;
+        System.out.println(num1+num2);
+        System.out.println(num1-num2);
+        System.out.println(num1*num2);
+        System.out.println(num1/num2);
+        
+    }
+}
+------------------------------------------------------------------
+3)
+Boolean Operations:
+Declare two boolean variables, isJavaFun and isCodingEasy, and initialize them with appropriate values.
+
+public class Input{
+    public static void main(String[] args){
+        boolean isjavaFun=true;
+        System.out.println("is java fun:"+isjavaFun);
+        boolean iscodingEast=false;
+        System.out.println("is coding easy"+iscodingEast);
+        
+    }
+}
+-----------------------------------------------------------------
+4)
+String Length:
+Declare a String variable named text and initialize it with any text.
+public class Input{
+    public static void main(String[] args){
+        String text="garima khatri";
+        System.out.println(text);
+        
+    }
+}
+--------------------------------------------------------------------
+5)
+Even or Odd:
+Write a Java program to check if a given number is even or odd.
+
+public class Input{
+    public static void main(String[] args){
+        int n=16;
+        System.out.println(n);
+        if(n%2==0){
+            System.out.println("This number is even");
+        }
+        else{
+            System.out.println("this number is odd");
+        }
+        
+    }
+}
+-------------------------------------------------------------------
+6)
+Leap Year:
+Create a Java program to determine if a given year is a leap year.
+
+public class Input{
+    public static void main(String[] args){
+        int year=2024;
+        System.out.println(year);
+        if(year%4==0 ||year%400==0 && year%100!=0){
+            System.out.println("Leap year");
+        }
+        else{
+            System.out.println("Not leap year");
+        }
+
+    }
+}
+-------------------------------------------------------------------
+7)
+Positive, Negative, or Zero:
+Create a Java program to check if a given number is positive, negative, or zero.
+
+import java.util.Scanner;
+public class Input{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.print("Enter the value of a:");
+        int a=oc.nextInt();
+        if(a>0){
+            System.out.println("Positive");
+        }
+        else if(a<0){
+            System.out.println("Negative");
+        }
+        else{
+            System.out.println("Zero");
+        }
+        
+       
+
+    }
+}
+---------------------------------------------------------------
+8)
+Grade Calculator:
+Develop a Java program that takes a student's score as input and prints their grade (A, B, C, D, or F).
+
+import java.util.Scanner;
+public class Input{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.println("Enter the subject marks:");
+        int h=oc.nextInt();
+        int e=oc.nextInt();
+        int m=oc.nextInt();
+        int sci=oc.nextInt();
+        int sst=oc.nextInt(); 
+        int total=h+e+m+sci+sst;
+        System.out.println("Total is:"+total);
+        double score=(total/500)*100;
+        System.out.println("score is:"+score);
+        if(score>80){
+            System.out.println("A grade");
+        }
+        else if(score>70 && score<=80){
+            System.out.println("B grade");
+        }
+        else if(score>60 && score<=70){
+            System.out.println("C grade");
+        }
+        else if(score>50 && score<=60){
+            System.out.println("D grade");
+        }
+        else if(score>36 && score<=50){
+            System.out.println("E grade");
+        }
+        else{
+            System.out.println("Fail");
+        }
+
+    }
+}
+----------------------------------------------------------------
+9)
+Print even numbers between 20 and 30 using a while loop.
+import java.util.Scanner;
+public class Input{
+    public static void main(String[] args){
+        int a=20;
+        int b=30;
+        while(a<=b){
+            if(a%2==0){
+                System.out.println(a);
+            }
+            a++;
+        }
+       
+
+    }
+}
+-------------------------------------------------------------
+10)
+Calculate the sum of first 100 natural numbers using a for loop.
+
+import java.util.Scanner;
+public class Input{
+    public static void main(String[] args){
+        int sum=0;
+        for(int i=1;i<=100;i++){
+            sum=sum+i;
+        }
+        System.out.println("The sum is:"sum);
+       
+
+    }
+}
+------------------------------------------------------------------
+11)
+Print the Fibonacci series up to 10 terms using a for loop.
+
+import java.util.Scanner;
+public class Input{
+    public static void main(String[] args){
+        int n1=0,n2=1,n3;
+        System.out.print(n1+" ");
+        System.out.print(n2+" ");
+        for(int i=1;i<=10;i++){
+            n3=n1+n2;
+            System.out.print(n3+" ");
+            n1=n2;
+            n2=n3;
+        }
+    }
+}
+-------------------------------------------------------------------
+12)
+Write a program to find the factorial of a number using a while loop.13)
+
+public class Input{
+    public static void main(String[] args){
+        int a=5;
+        int b=1;
+        int fact=1;
+        while(b<=a){
+            fact=fact*b;
+            b++;
+        }
+        System.out.println(fact);
+    }
+}
+-----------------------------------------------------------------
+14)
+Check if a given number is a palindrome using a using loop.
+
+public class Input{
+    public static void main(String[] args){
+        int num=1234;
+        System.out.println(num);
+        int sum=0,rem=0;
+        int temp=num;
+        while(num>0){
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+        }
+        System.out.println(sum);
+        if(temp==sum){
+            System.out.println("This number is pallindrome");
+        }
+        else{
+            System.out.println("This number is not pallindrome");
+        }
+    }
+}
+--------------------------------------------------------------------
+15)
+Rock-Paper-Scissors Game:
+Create a Java program for a simple Rock-Paper-Scissors game using if-else if conditions.
+
+16)
+Temperature Converter:
+Write a Java program that converts temperature from Celsius to Fahrenheit or vice versa based on user input using if-else statements.
+
+public class Input{
+    public static void main(String[] args){
+    float c=37.0f;
+    System.out.println("the celsius is:"+c);
+    float f=(c*9/5)+32;
+    System.out.println("the temp in f is:"+f);
+        
+        
+    }
+}
+------------------------------------------------------------------
+17)
+Ticket Reservation System:
+Develop a Java program for a simple ticket reservation system that checks seat availability and age restrictions using if-else if conditions.
+
+18)
+Even or Odd and Positive or Negative:
+Create a Java program that checks if a number is even or odd and positive or negative using nested if-else statements.
+
+import java.util.Scanner;
+
+public class Input{
+    public static void main(String[] args){
+    Scanner oc=new Scanner(System.in);
+    System.out.print("Enter the value of a:");
+    int a=oc.nextInt();
+    if(a%2==0){
+        if(a>0){
+            System.out.println("even andPositive");
+        }
+        else if(a<0){
+            System.out.println("even and negative");
+        }
+        else{
+            System.out.println("zero");
+        }
+    }
+    else if(a%2==1){
+        if(a>0){
+            System.out.println("odd and Positive");
+        }
+        else if(a<0){
+            System.out.println("odd and negative");
+        }
+        else{
+            System.out.println("zero");
+        }
+    }
+    }
+
+}
+
+------------------------------------------------------------
+19)
+Month Name:
+Develop a Java program that takes a month number as input and prints the month's name using switch.
+import java.util.Scanner;
+
+public class Input{
+    public static void main(String[] args){
+    Scanner oc=new Scanner(System.in);
+    System.out.print("Enter the month:");
+    int a=oc.nextInt();
+    if(a==1){
+        System.out.println("january");
+    }
+    else if(a==2){
+        System.out.println("February");
+    }
+    else if(a==3){
+        System.out.println("March");
+
+    }
+    else if(a==4){
+        System.out.println("April");
+    }
+    else if(a==5){
+        System.out.println("May");
+    }
+    else if(a==6){
+        System.out.println("June");
+    }
+    else if(a==7){
+        System.out.println("July");
+    }
+    else if(a==8){
+        System.out.println("August");
+    }
+    else if(a==9){
+        System.out.println("September");
+    }
+    else if(a==10){
+        System.out.println("October");
+    }
+    else if(a==11){
+        System.out.println("November");
+    }
+    else if(a==12){
+        System.out.println("December");
+    }
+}
+}
+---------------------------------------------------------------------------------------------------
+20)
+Ticket Pricing:
+Create a Java program to calculate the ticket price based on the age group (child, adult, senior).
+
+import java.util.Scanner;
+
+public class Input{
+    public static void main(String[] args){
+    Scanner oc=new Scanner(System.in);
+    System.out.print("Enter the value of a:");
+    int age=oc.nextInt();
+    String ticket_price="";
+    if(age<=12){
+        ticket_price="Rs.100";
+    }
+    else if(age>=13 && age<=55){
+        ticket_price="Rs.300";
+    }
+    else if(age>55){
+        ticket_price="Rs.200";
+    }
+    System.out.println(ticket_price);
+    }
+}       
