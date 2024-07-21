@@ -1,0 +1,577 @@
+                                    return and no argument 
+Q.1)
+all primitive data type :used as a return type 
+String used 
+covariant return type 
+
+ANS:-
+public class Garima{
+    int set1(){
+        int a=23;
+        return a;
+    }
+    float set2(){
+        float a=2.3f;
+        return a;
+    }
+    char set3(){
+        char a='z';
+        return a;
+
+    }
+    byte set4(){
+        byte a=79;
+        return a;
+    }
+    long set5(){
+        long a=456987123;
+        return a;
+    }
+    double set6(){
+        double a=123.65478;
+        return a;
+    }
+    short set7(){
+        short a=45;
+        return a;
+    }
+    String set8(){
+        String a="Garima";
+        return a;
+    }
+    boolean set9(){
+        boolean a=true;
+        return a;
+    }
+    Garima set10(){
+        int a=34;
+        System.out.println(a);
+        return this;
+    }
+    public static void main(String[] args){
+        Garima obj=new Garima();
+    
+        System.out.println(obj.set1());
+        System.out.println(obj.set2());
+        System.out.println(obj.set3());
+        System.out.println(obj.set4());
+        System.out.println(obj.set5());
+        System.out.println(obj.set6());
+        System.out.println(obj.set7());
+        System.out.println(obj.set8());
+        System.out.println(obj.set9());
+        System.out.println(obj.set10());
+    
+
+    }
+}
+-------------------------------------------------------------------
+Q.2)	
+class Main :
+add
+div
+multi
+sub
+mod 
+
+main method :access
+
+ANS:-
+public class Main{
+    int add(){
+        int a=1,b=2;
+        return a+b;
+    }
+    int div(){
+        int a=4,b=2;
+        return a/b;
+
+    }
+    int multi(){
+        int a=2,b=2;
+        return a*b;
+    }
+    int sub(){
+        int a=5,b=2;
+        return a-b;
+    }
+    int mod(){
+        int a=5,b=2;
+        return a%b;
+    }
+    public static void main(String[] args){
+        Main obj=new Main();
+        System.out.println(obj.add());
+        System.out.println(obj.div());
+        System.out.println(obj.multi());
+        System.out.println(obj.sub());
+        System.out.println(obj.mod());
+        
+
+    }
+}
+-------------------------------------------------------------------
+Q.3)
+class A
+add
+div
+multi
+sub
+mod 
+class Main :
+covariant return type 
+
+main method :A class k methods ko access
+
+ANS:-
+class A{
+    int add(){
+        int a=1,b=2;
+        return a+b;
+    }
+    int div(){
+        int a=4,b=2;
+        return a/b;
+
+    }
+    int multi(){
+        int a=2,b=2;
+        return a*b;
+    }
+    int sub(){
+        int a=5,b=2;
+        return a-b;
+    }
+    int mod(){
+        int a=5,b=2;
+        return a%b;
+    }
+}
+public class Main{
+    Main set(){
+        String name="regex";
+        System.out.println(name);
+        return this;
+    }
+    public static void main(String[] args){
+        A obj=new A();
+        System.out.println(obj.add());
+        System.out.println(obj.div());
+        System.out.println(obj.multi());
+        System.out.println(obj.sub());
+        System.out.println(obj.mod());
+
+        Main objM=new Main();
+        System.out.println(objM.set());
+        
+    }
+}
+-------------------------------------------------------
+Q.4)
+class A
+covariant return type 
+object C
+add
+
+class B
+covariant return type 
+div
+object A
+
+class C
+covariant return type 
+multi
+
+class D
+covariant return type 
+sub
+object B
+
+class E
+covariant return type 
+object D
+mod 
+
+
+class Main :
+covariant return type 
+main method :access all the methods
+
+ANS:-
+class A{
+    A cov1(){
+        int a=23;
+        System.out.println(a);
+        return this;
+    }
+
+   
+    int add(){
+        C obj=new C();
+        obj.cov3();
+        System.out.println(obj.multi());
+        int a=1,b=2;
+        return a+b;
+    }
+}
+class B{
+    B cov2(){
+        float a=23.45f;
+        System.out.println(a);
+        return this;
+    }
+    int div(){
+        int a=4,b=2;
+        System.out.println(a/b);
+
+        A obj=new A();
+        obj.cov1();
+        System.out.println(obj.add());
+        return 0;
+       
+    }
+}
+class C{
+    C cov3(){
+        char name='g';
+        System.out.println(name);
+        return this;
+    }
+    int multi(){
+        int a=2,b=2;
+        return a*b;
+    }
+}
+class D{
+    D cov4(){
+        String name="garima";
+        System.out.println(name);
+        return this;
+    }
+    int sub(){
+        int a=5,b=2;
+        System.out.println(a-b);
+        B obj=new B();
+        obj.cov2();
+        obj.div();
+        return 0;
+    }
+}
+class E{
+    E cov5(){
+        int a=819;
+        System.out.println(a);
+        return this;
+    }
+    int mod(){
+        D obj=new D();
+        obj.cov4();
+        obj.sub();
+        int a=5,b=2;
+        return a%b;
+    }
+}
+public class Main{
+    Main set(){
+        String name="regex";
+        System.out.println(name);
+        return this;
+    }
+    public static void main(String[] args){
+       
+        E obj=new E();
+        obj.cov5();
+        System.out.println(obj.mod());
+
+        Main ob=new Main();
+        ob.set();
+    }
+}
+-------------------------------------------------------------
+******************************************************************
+	    return and  argument 
+Q.1)
+all primitive data type :used as a return type 
+String used 
+covariant return type
+
+ANS:-
+public class Main1{
+    int pop1(int a){
+        return a;
+    }
+
+    float pop2(float a){
+        return a;
+    }
+
+    char pop3(char a){
+        return a;
+    }
+
+    byte pop4(byte a){
+        return a;
+    }
+
+    short pop5(short a){
+        return a;
+    }
+
+    long pop6(long a){
+        return a;
+    }
+
+    double pop7(double a){
+        return a;
+    }
+
+    boolean pop8(boolean a){
+        return a;
+    }
+
+    String pop9(String a){
+        return a;
+    }
+
+    Main1 pop10(int a){
+        System.out.println(a);
+        return this;
+    }
+
+    public static void main(String[] args){
+
+        Main1 obj=new Main1();
+        System.out.println(obj.pop1(12));
+        System.out.println(obj.pop2(2.3f));
+        System.out.println(obj.pop3('G'));
+        System.out.println(obj.pop4((byte)45));
+        System.out.println(obj.pop5((short)1200));
+        System.out.println(obj.pop6(145698725698l));
+        System.out.println(obj.pop7(123.45698752));
+        System.out.println(obj.pop8(true));
+        System.out.println(obj.pop9("Regex"));
+        obj.pop10(78);
+
+
+    }
+} 
+-------------------------------------------------------------------
+Q.2)
+class Main :
+add
+div
+multi
+sub
+mod 
+main method :access
+
+ANS:-
+public class Main1 {
+    int add(int a,int b){
+        return a+b;
+    }
+
+    int div(int a,int b){
+        return a/b;
+    }
+    
+    int multi(int a,int b){
+        return a*b;
+    }
+
+    int sub(int a,int b){
+        return a-b;
+    }
+
+    int mod(int a,int b){
+        return a%b;
+    }
+    public static void main(String[] args) {
+
+        Main1 ob=new Main1();
+        System.out.println(ob.add(2,2));
+        System.out.println(ob.div(4, 2));
+        System.out.println(ob.multi(2,2));
+        System.out.println(ob.sub(4, 2));
+        System.out.println(ob.mod(7, 2));
+        
+    }
+}
+
+-------------------------------------------------------------------
+Q.3)
+class A
+add
+div
+multi
+sub
+mod 
+class Main :
+covariant return type 
+
+main method :A class k methods ko access
+
+ANS:-
+class A{
+    int add(int a,int b){
+        return a+b;
+    }
+
+    int div(int a,int b){
+        return a/b;
+    }
+    
+    int multi(int a,int b){
+        return a*b;
+    }
+
+    int sub(int a,int b){
+        return a-b;
+    }
+
+    int mod(int a,int b){
+        return a%b;
+    }
+}
+public class Main1 {
+    Main1 covMain1(String name){
+        System.out.println(name);
+        return this;
+    }
+    public static void main(String[] args) {
+
+        A ob=new A();
+        System.out.println(ob.add(2,2));
+        System.out.println(ob.div(4, 2));
+        System.out.println(ob.multi(2,2));
+        System.out.println(ob.sub(4, 2));
+        System.out.println(ob.mod(7, 2));
+
+        Main1 obj=new Main1();
+        obj.covMain1("Regex");
+        
+    }
+}
+
+-----------------------------------------------------------------
+Q.4)
+class A
+covariant return type 
+object C
+add
+
+class B
+covariant return type 
+div
+object A
+
+class C
+covariant return type 
+multi
+
+class D
+covariant return type 
+sub
+object B
+
+class E
+covariant return type 
+object D
+mod 
+
+class Main :
+covariant return type 
+main method :access all the methods
+
+
+ANS:-
+class A{
+    A cov1(int a){
+        
+        System.out.println(a);
+        return this;
+    }
+
+   
+    int add(int a,int b){
+        C obj=new C();
+        obj.cov3('g');
+        System.out.println(obj.multi(2,2));
+        
+        return a+b;
+    }
+}
+class B{
+    B cov2(float a){
+        
+        System.out.println(a);
+        return this;
+    }
+    int div(int a,int b){
+        
+        System.out.println(a/b);
+
+        A obj=new A();
+        obj.cov1(23);
+        System.out.println(obj.add(4,2));
+        return 0;
+       
+    }
+}
+class C{
+    C cov3(char name){
+        
+        System.out.println(name);
+        return this;
+    }
+    int multi(int a,int b){
+        
+        return a*b;
+    }
+}
+class D{
+    D cov4(String name){
+        
+        System.out.println(name);
+        return this;
+    }
+    int sub(int a,int b){
+        
+        System.out.println(a-b);
+        B obj=new B();
+        obj.cov2(23.45f);
+        obj.div(4,2);
+        return 0;
+    }
+}
+class E{
+    E cov5(int a){
+        
+        System.out.println(a);
+        return this;
+    }
+    int mod(int a,int b){
+        D obj=new D();
+        obj.cov4("garima");
+        obj.sub(5,2);
+        
+        return a%b;
+    }
+}
+public class Main{
+    Main set(String name){
+        
+        System.out.println(name);
+        return this;
+    }
+    public static void main(String[] args){
+       
+        E obj=new E();
+        obj.cov5(45);
+        System.out.println(obj.mod(5,2));
+
+        Main ob=new Main();
+        ob.set("regex");
+    }
+}
+----------------------------------------------------------------------
