@@ -1,0 +1,524 @@
+                              NO RETURN AND NO ARGUMENT
+
+Q.1)
+class Main :
+add
+div
+multi
+sub
+mod 
+main method :access
+
+ANS:-
+public class Garima {
+    void add(){
+        int a=2;
+        int b=3;
+        System.out.println(a+b);
+    }
+    void div(){
+        int a=6,b=3;
+        System.out.println(a/b);
+    }
+    void multi(){
+        int a=4,b=4;
+        System.out.println(a*b);
+    }
+    void sub(){
+        int a=4;
+        int b=2;
+        System.out.println(a-b);
+    }
+    void mod(){
+        int a=7,b=2;
+        System.out.println(a%b);
+    }
+    public static void main(String[] args){
+        Garima sc=new Garima();
+        sc.add();
+        sc.div();
+        sc.multi();
+        sc.sub();
+        sc.mod();
+    }
+}
+
+-------------------------------------------------------
+Q.2)
+class A
+add
+div
+multi
+sub
+mod 
+
+class Main :
+
+main method :A class k methods ko access
+
+ANS:-
+class A{
+    void add(){
+        int a=2;
+        int b=3;
+        int c=a+b;
+        System.out.println("add:"+c);
+    }
+    void div(){
+        int a=6,b=3;
+        int c=a/b;
+        System.out.println("div:"+c);
+    }
+    void multi(){
+        int a=4,b=4;
+        int c=a*b;
+        System.out.println("multi:"+c);
+    }
+    void sub(){
+        int a=4;
+        int b=2;
+        int c=a-b;
+        System.out.println("sub:"+c);
+    }
+    void mod(){
+        int a=7,b=2;
+        int c=a%b;
+        System.out.println("mod:"+c);
+    }
+}
+public class Garima {
+    
+    public static void main(String[] args){
+        A oc=new A();
+        oc.add();
+        oc.div();
+        oc.multi();
+        oc.sub();
+        oc.mod();
+    }
+}
+
+-------------------------------------------------------
+Q.3)
+class A
+add
+
+class B
+div
+
+class C
+multi
+
+class D
+sub
+
+class E
+mod 
+
+
+class Main :
+main method :access all the methods
+
+ANS:-
+class A{
+    void add(){
+        int a=2;
+        int b=3;
+        int c=a+b;
+        System.out.println("add:"+c);
+    }
+}
+
+class B{
+    void div(){
+        int a=6,b=2;
+        int c=a/b;
+        System.out.println("div:"+c);
+    }
+}
+class C{
+    void multi(){
+        int a=2,b=3;
+        int c=a*b;
+        System.out.println("multi:"+c);
+    }
+}
+class D{
+    void sub(){
+        int a=2,b=2;
+        int c=a*b;
+        System.out.println("sub:"+c);
+    }
+}
+class E{
+    void mod(){
+        int a=9,b=4;
+        int c=a%b;
+        System.out.println("mod:"+c);
+    }
+}
+public class Garima {
+    
+    public static void main(String[] args){
+        A oc=new A();
+        oc.add();
+        B sc=new B();
+        sc.div();
+        C ab=new C();
+        ab.multi();
+        D cd=new D();
+        cd.sub();
+        E bd=new E();
+        bd.mod();
+        
+    }
+}
+
+---------------------------------------------------------------------------
+Q.4) 
+class A
+object C
+add
+
+class B
+div
+object A
+
+class C
+multi
+
+class D
+sub
+object B
+
+class E
+object D
+mod 
+main method :access all the methods
+
+ANS:-
+class A{
+    void add(){
+        C oc=new C();
+        oc.multi();
+        int a=2;
+        int b=3;
+        int c=a+b;
+        System.out.println("add:"+c);
+        
+    }
+}
+
+class B{
+    void div(){
+        int a=6,b=2;
+        int c=a/b;
+        System.out.println("div:"+c);
+        A oc=new A();
+        oc.add();
+    }
+}
+class C{
+    void multi(){
+        int a=2,b=3;
+        int c=a*b;
+        System.out.println("multi:"+c);
+    }
+}
+class D{
+    void sub(){
+        int a=2,b=2;
+        int c=a*b;
+        System.out.println("sub:"+c);
+        B oc=new B();
+        oc.div();
+    }
+}
+class E{
+    void mod(){
+        D oc=new D();
+        oc.sub();
+        int a=9,b=4;
+        int c=a%b;
+        System.out.println("mod:"+c);
+    }
+}
+public class Garima {
+    
+    public static void main(String[] args){
+        E oc=new E();
+        oc.mod();
+        
+    }
+}
+
+
+-------------------------------------------------------------------
+                    NO RETURN AND ARGUMENT
+Q.5)
+class Main :
+add
+div
+multi
+sub
+mod 
+main method :access
+
+ANS:-
+import java.util.*;
+public class Garima {
+        void add(int a,int b){
+            int c=a+b;
+            System.out.println("add:"+c);
+        }
+        void div(int a,int b){
+            int c=a/b;
+            System.out.println("div:"+c);
+        }
+        void multi(int a,int b){
+            int c=a*b;
+            System.out.println("multi:"+c);
+        }
+        void sub(int a,int b){
+            int c=a-b;
+            System.out.println("sub:"+c);
+        }
+        void mod(int a,int b){
+            int c=a%b;
+            System.out.println("mod:"+c);
+        }
+    public static void main(String[] args){
+        Scanner ob=new Scanner(System.in);
+        System.out.print("Enetr the value of a:");
+        int a=ob.nextInt();
+        System.out.print("Enter the value of b:");
+        int b=ob.nextInt();
+        Garima object=new Garima();
+        object.add(a,b);
+        object.div(a,b);
+        object.multi(a,b);
+        object.sub(a,b);
+        object.mod(a,b);
+
+    }
+}
+-------------------------------------------------------
+Q.6)
+class A
+add
+div
+multi
+sub
+mod 
+class Main :
+
+main method :A class k methods ko access
+
+ANS:-
+import java.util.*;
+class A{
+    void add(int a,int b){
+        int c=a+b;
+        System.out.println("add:"+c);
+    }
+    void div(int a,int b){
+        int c=a/b;
+        System.out.println("div:"+c);
+    }
+    void multi(int a,int b){
+        int c=a*b;
+        System.out.println("multi:"+c);
+    }
+    void sub(int a,int b){
+        int c=a-b;
+        System.out.println("sub:"+c);
+    }
+    void mod(int a,int b){
+        int c=a%b;
+        System.out.println("mod:"+c);
+    }
+}
+public class Garima {
+        
+    public static void main(String[] args){
+        Scanner ob=new Scanner(System.in);
+        System.out.print("Enetr the value of a:");
+        int a=ob.nextInt();
+        System.out.print("Enter the value of b:");
+        int b=ob.nextInt();
+        A object=new A();
+        object.add(a,b);
+        object.div(a,b);
+        object.multi(a,b);
+        object.sub(a,b);
+        object.mod(a,b);
+
+    }
+}
+-------------------------------------------------------
+Q.7)
+
+class A
+add
+
+class B
+div
+
+class C
+multi
+
+class D
+sub
+
+class E
+mod 
+class Main :
+main method :access all the methods
+
+
+ANS:-
+import java.util.*;
+class A{
+    void add(int a,int b){
+        int c=a+b;
+        System.out.println("add:"+c);
+    }
+}
+
+class B{
+    void div(int a,int b){
+        int c=a/b;
+        System.out.println("div:"+c);
+    }
+}
+
+class C{
+    void multi(int a,int b){
+        int c=a*b;
+        System.out.println("multi:"+c);
+    }
+}
+class D{
+    void sub(int a,int b){
+        int c=a-b;
+        System.out.println("sub:"+c);
+    }
+}
+
+class E{
+    void mod(int a,int b){
+        int c=a%b;
+        System.out.println("mod:"+c);
+    }
+}
+public class Garima {
+        
+    public static void main(String[] args){
+        Scanner ob=new Scanner(System.in);
+        System.out.print("Enetr the value of a:");
+        int a=ob.nextInt();
+        System.out.print("Enter the value of b:");
+        int b=ob.nextInt();
+        A objecta=new A();
+        objecta.add(a,b);
+
+        B objectb=new B();
+        objectb.div(a,b);
+
+        C objectc=new C();
+        objectc.multi(a,b);
+
+        D objectd=new D();
+        objectd.sub(a,b);
+
+        E objecte=new E();
+        objecte.mod(a,b);
+
+    }
+}
+-----------------------------------------------------------------
+============
+no return and  argument 
+
+Q.8)
+class A
+object C
+add
+
+class B
+object A
+div
+
+class C
+multi
+
+class D
+object B
+sub
+
+class E
+object D
+mod 
+
+class Main :
+main method :access all the methods
+
+ANS:-
+import java.util.*;
+
+class A{
+    
+    void add(int a,int b){
+        C obj=new C();
+        obj.multi(a,b);
+        int c=a+b;
+        System.out.println("add:"+c);
+    }
+}
+
+class B{
+    void div(int a,int b){
+        A obj=new A();
+        obj.add(a,b);
+        int c=a/b;
+        System.out.println("div:"+c);
+    }
+}
+
+class C{
+    void multi(int a,int b){
+        int c=a*b;
+        System.out.println("multi:"+c);
+    }
+}
+class D{
+    void sub(int a,int b){
+        B obj=new B();
+        obj.div(a,b);
+        int c=a-b;
+        System.out.println("sub:"+c);
+    }
+}
+
+class E{
+    void mod(int a,int b){
+        D obj=new D();
+        obj.sub(a,b);
+        int c=a%b;
+        System.out.println("mod:"+c);
+    }
+}
+public class Garima {
+        
+    public static void main(String[] args){
+        Scanner ob=new Scanner(System.in);
+        System.out.print("Enetr the value of a:");
+        int a=ob.nextInt();
+        System.out.print("Enter the value of b:");
+        int b=ob.nextInt();
+        E object=new E();
+        object.mod(a,b);
+        
+
+    }
+}
