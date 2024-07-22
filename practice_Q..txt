@@ -1,0 +1,56 @@
+-Write a C program that accepts two item’s weight (floating points&#39; values ) and number of
+purchase (floating points&#39; values) and calculate the average value of the items.
+Test Data :
+Weight - Item1: 15
+No. of item1: 5
+Weight - Item2: 25
+No. of item2: 4
+Expected Output:
+Average Value = 19.444444
+
+
+import java.util.Scanner;
+public class Input{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("No. of item1:");
+        float item1=sc.nextFloat();
+        System.out.print(" Weight of item1:");
+        float weight1=sc.nextFloat();
+        System.out.print("No. of item2:");
+        float item2=sc.nextFloat();
+        System.out.print(" Weight of item2:");
+        float weight2=sc.nextFloat();
+        float average_value=((item1*weight1)+(item2*weight2))/(item1+item2);
+        System.out.println(average_value);
+        
+        
+    }
+}
+--------------------------------------------------------------------------------------------------
+-Write a C program that accepts an employee&#39;s ID, total worked hours of a month and the
+amount he received per hour. Print the employee&#39;s ID and salary (with two decimal places) of a
+particular month.
+Test Data :
+Input the Employees ID(Max. 10 chars): 0342
+Input the working hrs: 8
+Salary amount/hr: 15000
+Expected Output:
+Employees ID = 0342
+Salary = U$ 120000.00
+
+import java.util.Scanner;
+public class Input{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Employees ID=");
+        char ID=sc.next().charAt(0);
+        System.out.print("Employees working hours:");
+        float hrs=sc.nextFloat();
+        System.out.print("Enter Salary amount/hrs:");
+        float amount=sc.nextFloat();
+        System.out.println("Salary="+amount*hrs);
+        
+    }
+}
+---------------------------------------------------------------------------------------
