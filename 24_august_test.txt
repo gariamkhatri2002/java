@@ -1,0 +1,255 @@
+1)
+Write a Java program to find power of any number x ^ y.
+ANS:-
+import java.util.*;
+public class Main2{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.print("Enter number:");
+        int x=oc.nextInt();
+        System.out.print("enter power:");
+        int y=oc.nextInt();
+        int n=1;
+        for(int i=1;i<=y;i++){
+            n=x*n;
+        }
+        System.out.println(n);
+           
+        }
+}
+
+-----------------------------------------------------
+2)
+Write a Java program to input marks of five subjects Physics, Chemistry, Biology,
+Mathematics and Computer. Calculate percentage and grade according to
+following:
+Percentage >= 90% : Grade A
+Percentage >= 80% : Grade B
+Percentage >= 70% : Grade C
+Percentage >= 60% : Grade D
+Percentage >= 40% : Grade E
+Percentage < 40% : Grade F
+ANS:-
+import java.util.*;
+public class Main2{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.print("Enter the subject marks:");
+        int ph=oc.nextInt();
+        int ch=oc.nextInt();
+        int bio=oc.nextInt();
+        int math=oc.nextInt();
+        int comp=oc.nextInt();
+        float total=ph+ch+bio+math+comp;
+        float per=(total/500)*100;
+        System.out.println("percentage:"+per);
+        if(per>=90.0){
+            System.out.println("A grade");
+        }
+        else if(per>70.0 && per<=80.0){
+            System.out.println("B grade");
+        }
+        else if(per>60.0 && per<=70.0){
+            System.out.println("C grade");
+        }
+        else if(per>50.0 && per<=60.0){
+            System.out.println("D grade");
+        } 
+        else if(per>=40 && per<=50){
+            System.out.println("E grade");
+        }
+        else{
+            System.out.println("F grade");
+        }
+           
+    }
+}
+--------------------------------------------------------
+3)
+Write a Java  program to print all natural numbers in reverse (from n to 1). - using
+while loop
+ANS:-
+import java.util.*;
+public class Main2{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.print("Enter number:");
+        int n=oc.nextInt();
+       while(n>0){
+        System.out.print(n+" ");
+        n--;
+       }
+       
+           
+        }
+}
+
+------------------------------------------------------
+4)
+Write a Java program to print all alphabets from a to z. - using while loop
+ANS:-
+import java.util.*;
+public class Main2{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        
+        char n='a';
+        char k='z';
+       while(n<=k){
+        System.out.print(n+" ");
+        n++;
+       }
+       
+           
+        }
+}
+
+-------------------------------------------------------
+5)
+Write a Java program to find sum of first and last digit of a number.
+ANS:-
+import java.util.*;
+public class Main2{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.print("Enter the number:");
+        int num=oc.nextInt();
+        int rem=0;
+        int last=num%10;
+        int first=0;
+        while(num>0){
+            rem=num%10;
+            first=rem;
+            num=num/10;
+        }
+        System.out.println("number first digit:"+first);
+        System.out.println("number last digit:"+last);
+        int sum=first+last;
+        System.out.println("the sum of first and last digit:"+sum);
+       
+           
+    }
+}
+
+-------------------------------------------------------
+6)
+Write a Java program to calculate product of digits of a number
+ANS:-
+import java.util.*;
+public class Main2{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.print("Enter the number:");
+        int num=oc.nextInt();
+        int prod=1;
+        for(int i=1;i<=num;i++){
+            prod=prod*i;
+        }
+        System.out.println("product of digit of a number:"+prod);
+    }
+}
+--------------------------------------------------------
+7)
+Write a Java program to print all Prime numbers between 1 to n
+ANS:-
+import java.util.*;
+public class Main2{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.print("Enter the number:");
+        int n=oc.nextInt();
+        int num=0;
+        for(int i=1;i<=n;i++){
+            num=i;
+            int flag=0;
+            for(int j=2;j<num;j++){
+                if(num%j==0){
+                   flag=1;
+                   break;
+                }
+            }
+            if(flag==0){
+                System.out.print(num+" ");
+            }
+        }
+           
+    }
+}
+
+---------------------------------------------------------
+8)
+Write a Java program to print Fibonacci series up to n terms
+ANS:-
+import java.util.*;
+public class Main2{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.print("Enter the number:");
+        int n=oc.nextInt();
+        int n1=0,n2=1,n3;
+        System.out.print(n1+" "+n2+" ");
+        for(int i=1;i<=n;i++){
+            n3=n1+n2;
+            System.out.print(n3+" ");
+            n1=n2;
+            n2=n3;
+        }
+        
+           
+    }
+}
+
+-------------------------------------------------------
+
+
+9)
+Write a Java program that accepts two item’s weight (floating points' values ) and number of purchase (floating points' values) and calculate the average value of the items.  
+Test Data :
+Weight - Item1: 15
+No. of item1: 5
+Weight - Item2: 25
+No. of item2: 4
+Expected Output:
+Average Value = 19.444444
+ANS:-
+import java.util.*;
+public class Main2{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.print("Enter the one item weight:");
+        float weight1=oc.nextFloat();
+        System.out.print("enter the total number of item1:");
+        float item1=oc.nextFloat();
+        float total_weight1=weight1*item1;
+        System.out.println("total weight of item1:"+total_weight1);
+        System.out.print("Enter the one item weight:");
+        float weight2=oc.nextFloat();
+        System.out.print("enter the total number of item2:");
+        float item2=oc.nextFloat();
+       
+        float total_weight2=weight2*item2;
+        System.out.println("total weight of item2:"+total_weight2);
+        float average=(total_weight1+total_weight2)/(item1+item2);
+        System.out.println("average value of the items:"+average);
+    }
+}
+--------------------------------------------------------
+10)
+print floy'ds triangle in java 
+ANS:-
+import java.util.*;
+public class Main2{
+    public static void main(String[] args){
+        Scanner oc=new Scanner(System.in);
+        System.out.print("Enter the number:");
+        int num=oc.nextInt();
+        for(int i=1;i<=num;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+    }
+}
+--------------------------------------------------------
